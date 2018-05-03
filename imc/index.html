@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Cálculo de IMC</title>
+    <link rel="stylesheet" type="text/css" href="semantic/dist/semantic.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script
+      src="https://code.jquery.com/jquery-3.1.1.min.js"
+      integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+      crossorigin="anonymous"></script>
+    <script src="semantic/dist/semantic.min.js"></script>
+	<script type="text/javascript" src="js/calculo_imc.js"></script>
+  </head>
+  <body>
+	<div class="ui three column divided grid">
+  <div class="stretched row">
+    <div class="column">
+		<form class="ui form">
+		<div class="field">
+			<label>Peso</label>
+				<div class="ui right labeled input">
+					<input id = "peso" type="text" placeholder="Peso em quilogramas">
+					<div class="ui basic label">
+						kg
+					</div>
+				</div>
+		<div class="field">
+			<label>Altura</label>
+			<div class="ui right labeled input">
+				<input id = "altura" type="text" placeholder="Altura em metros">
+				<div class="ui basic label">
+					m
+				</div>
+			</div>
+		</div>
+		<button class="ui button" type="submit" onclick = "calculaIMC()">Calcular</button>
+	</form>
+    </div>
+  </div>
+</div>
+  </body>
+</html>
+
